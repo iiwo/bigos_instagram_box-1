@@ -67,7 +67,7 @@ module BigosInstagramBox
               :count => count
           )
 
-          items.data.each do |photo_hash|
+          items.each do |photo_hash|
             posts << BigosInstagramBox::InstagramPhoto.new(photo_hash)
           end
         rescue
